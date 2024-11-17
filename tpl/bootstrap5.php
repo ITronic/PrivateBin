@@ -458,7 +458,12 @@ endif;
 		</main>
 		<footer class="container-fluid mt-auto">
 			<div class="row">
-				<h5 class="col-md-5 col-xs-8"><?php echo I18n::_($NAME); ?> <small>- <?php echo I18n::_('Because ignorance is bliss'); ?></small></h5>
+				<!-- ITRONIC PATCH+ -->
+				<div class="col-md-5 col-xs-8">
+					<h4><?php echo I18n::_($NAME); ?></h4>
+					<p>operated by <a href="https://itronic.at">ITronic</a> - <a href="https://itronic.at/impressum">Imprint</a> - <a href="https://itronic.at/datenschutz">Privacy</a></p>
+				</div>
+				<!-- ITRONIC PATCH- -->
 				<p class="col-md-1 col-xs-4 text-center"><?php echo $VERSION; ?></p>
 				<p id="aboutbox" class="col-md-6 col-xs-12">
 					<?php echo sprintf(
